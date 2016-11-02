@@ -1,36 +1,34 @@
-$(document).on("click", "#joinroom", function(data) {
-    if(document.getElementById("usr").value == "")
-    {
-        alert("Please enter a name.");
-        return;
-    }
-    else
-    {
-        setLocalName();
-        location.href = "./HTML/rooms.html";
-    }
+$(document).on("click", "#joinroom", function(data)
+{
+    checkNameEmpty();
+    setLocalName();
+    location.href = "./HTML/rooms.html";
 });
 
-$(document).on("click", "#hostroom", function(data) {
+$(document).on("click", "#hostroom", function(data)
+{
+    checkNameEmpty();
+    setLocalName();
+    //addRoom();
+    console.log("else called host");
+    location.href = "./HTML/Host.html";
+});
+
+function checkNameEmpty()
+{
     if(document.getElementById("usr").value == "")
     {
         alert("Please enter a name.");
         return;
     }
-    else
-    {
-        setLocalName();
-        addRoom();
-        console.log("else called host");
-        location.href = "./HTML/Host.html";
-    }
-});
+}
 
 function setLocalName()
 {
     localStorage.setItem("name", document.getElementById("usr").value);
 }
 
+/*
 function addRoom()
 {
     var currentdate = new Date();
@@ -60,3 +58,4 @@ function addRoom()
     newRoom.set(newRoomData);
     console.log("Got here");
 }
+*/
