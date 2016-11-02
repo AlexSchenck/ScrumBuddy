@@ -21,8 +21,9 @@ $(document).on("click", "#hostroom", function(data) {
     {
         setLocalName();
         // addRoom();
-        addRoom(function() { location.href = "./HTML/Host.html" });
         console.log("else called host");
+        addRoom(function() { location.href = "./HTML/Host.html" });
+
     }
 });
 
