@@ -7,7 +7,7 @@ $(document).on("click", "#joinroom", function(data) {
     else
     {
         setLocalName();
-        location.href = "./HTML/rooms.html";
+        location.href = "HTML/rooms.html";
     }
 });
 
@@ -21,7 +21,7 @@ $(document).on("click", "#hostroom", function(data) {
     {
         setLocalName();
         addRoom();
-        location.href = "./HTML/Host.html";
+        location.href = "HTML/Host.html";
     }
 });
 
