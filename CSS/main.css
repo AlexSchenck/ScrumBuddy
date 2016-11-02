@@ -1,0 +1,32 @@
+/* nav bar styles */
+.navbar-default  {
+	background-color: #608DA4;
+	border-color: #608DA4;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+#navbar-brand-link {
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin-left: 10px;
+}
+
+body {
+    background-image: url(../IMG/triangular.png);
+    margin-top:10px;
+}
+
+
+.room-button {
+	width: 70px;
+	margin-left: 20px;
+}
+
+#home-buttons {
+    width: 75%;
+    margin: 0 auto;
+}
