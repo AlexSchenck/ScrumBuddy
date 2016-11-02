@@ -24,7 +24,7 @@ $(document).on("click", "#hostroom", function(data) {
         console.log("else called host");
         addRoom(function() { 
                     alert("callback called");
-                    location.href = "./HTML/Host.html"; 
+                    window.location.href = "./HTML/Host.html"; 
                 });
 
     }
