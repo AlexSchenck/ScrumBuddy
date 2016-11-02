@@ -54,7 +54,7 @@ function addRoom()
     }
     var newRoom = roomsRef.push();
     
-    localStorage.setItem("currentHostRoomID", newRoom.key);
+    //localStorage.setItem("currentHostRoomID", newRoom.key);
     
     newRoom.set(newRoomData);
     console.log("Got here");
