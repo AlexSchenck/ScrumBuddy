@@ -36,7 +36,7 @@ function setLocalName()
     localStorage.setItem("name", document.getElementById("usr").value);
 }
 
-function addRoom()
+function addRoom(callback)
 {
     var currentdate = new Date();
     
