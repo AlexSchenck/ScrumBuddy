@@ -22,7 +22,6 @@ $(document).on("click", "#hostroom", function(data) {
         setLocalName();
         addRoom();
         console.log("else called host");
-        location.href = "./HTML/Host.html";
     }
 });
 
@@ -59,4 +58,5 @@ function addRoom()
     
     newRoom.set(newRoomData);
     console.log("Got here");
+    location.href = "./HTML/Host.html";
 }
