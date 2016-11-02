@@ -23,7 +23,7 @@ $(document).on("click", "#hostroom", function(data) {
         // addRoom();
         console.log("else called host");
         addRoom(function() { 
-                    // location.href = "./HTML/Host.html"; 
+                    location.href = "./HTML/Host.html"; 
                 });
 
     }
