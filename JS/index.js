@@ -21,15 +21,11 @@ $(document).on("click", "#hostroom", function(data) {
     {
         setLocalName();
         // addRoom();
-        addRoom(moveToHostPage);
+        addRoom(function() { location.href = "./HTML/Host.html" });
         console.log("else called host");
     }
 });
 
-// new stuff
-function moveToHostPage() {
-    location.href = "./HTML/Host.html";
-}
 
 function setLocalName()
 {
