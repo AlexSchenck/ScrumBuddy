@@ -52,7 +52,7 @@ function addRoom()
         users: { 
                 name: "nullVal"
         }
-    }
+    };
     var newRoom = roomsRef.push();
     
     localStorage.setItem("currentHostRoomID", newRoom.key);
