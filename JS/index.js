@@ -1,25 +1,30 @@
 $(document).on("click", "#joinroom", function(data)
 {
-    checkNameEmpty();
-    setLocalName();
-    location.href = "./HTML/rooms.html";
+    if (!nameIsEmpty())
+    {
+        setLocalName();
+        location.href = "./HTML/rooms.html";
+    }
 });
 
 $(document).on("click", "#hostroom", function(data)
 {
-    checkNameEmpty();
-    setLocalName();
-    console.log("else called host");
-    location.href = "./HTML/Host.html";
+    if (!nameIsEmpty())
+    {
+        setLocalName();
+        location.href = "./HTML/Host.html";
+    }
 });
 
-function checkNameEmpty()
+function nameIsEmpty()
 {
     if(document.getElementById("usr").value == "")
     {
         alert("Please enter a name.");
-        return;
+        return true;
     }
+
+    return false;
 }
 
 function setLocalName()
