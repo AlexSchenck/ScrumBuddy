@@ -1,19 +1,21 @@
-$(document).on("click", "#joinroom", function(data)
-{
-    if (!nameIsEmpty())
+$(document).ready(function() {
+    $(document).on("click", "#joinroom", function(data)
     {
-        setLocalName();
-        location.href = "./HTML/rooms.html";
-    }
-});
+        if (!nameIsEmpty())
+        {
+            setLocalName();
+            location.href = "./HTML/rooms.html";
+        }
+    });
 
-$(document).on("click", "#hostroom", function(data)
-{
-    if (!nameIsEmpty())
+    $(document).on("click", "#hostroom", function(data)
     {
-        setLocalName();
-        location.href = "./HTML/Host.html";
-    }
+        if (!nameIsEmpty())
+        {
+            setLocalName();
+            location.href = "./HTML/Host.html";
+        }
+    });
 });
 
 function nameIsEmpty()
